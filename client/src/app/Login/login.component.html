@@ -1,0 +1,192 @@
+<div class="no-padding headerhght">
+    <nav class="navbar navbar-default navbar-fixed-top hdrshadow">
+        <div class="container-fluid no-padding hdrbgclr">
+            <div class="col-md-12 col-sm-12 headerhght">
+                <div class="col-md-6 col-sm-6 zeropadmbl">
+                    <img src="/images/myHealthRecordlogo.png" class="img-responsive " width="42" />
+                    <a href="/Home/Index">
+                        <img src="/images/MyHealthRecord.png" class="img-responsive phrmsrimg" />
+                    </a>
+                </div>
+                <div class="col-md-6 col-sm-6 righthalf">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="navbar-header hdrnavcustom">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav"></ul>
+                            <ul class="nav navbar-nav navbar-right tabcntr btnsintab" style="display: flex">
+                                <li class="lirghtup lipad">
+                                    <img src="/images/nationalemblemindia.png" class="img-responsive lionimg" width="42">
+                                </li>
+                                <li class="">
+                                    <a href="/Home/Login">
+                                        <button class="btn btn-success btn-xs">Sign In</button>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="/Account/Register">
+                                        <button class="btn btn-primary btn-xs">Sign Up</button>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="http://practice.myhealthrecord.nhp.gov.in">
+                                        <button class="btn btn-warning btn-xs">Doctor Login</button>
+                                    </a>
+                                </li>
+                                <!--<select class="css-select" name="language" id="language" style="height: 18px; margin-top: 25px; font-size: 13px;">
+                                    <option value="english">English</option>
+                                    <option value="hindi">हिन्दी</option>
+                                </select>-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+<br />
+<div class="container-fluid no-padding loginpage">
+    <div class="section">
+        <div class="center-block">
+            <div class="col-md-12">
+                <div class="baseline">
+                    <div class="row">
+                        <div class="col-md-4" style="padding:10px;margin: auto;">
+                            &nbsp;
+                        </div>
+                        <br>
+                        <div class="col-md-6 col-sm-10 mblcntr">
+                            <h2 class="bluetxt login-header"></h2>
+                            <h2 class="bluetxt login-header"></h2>
+                            <div class="login-width70 shadow gray">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p class="black top10 bot5"><strong>Sign In to your account</strong></p>
+                                    </div>
+                                </div>
+
+                                <form action="/Home/Login" id="frmLogin" method="post">
+
+                                    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8Kg9ujw5Hm9KqSEAgMk90UvqgpRmr7xNjqbVpmh-kxd19Dsc8cDPZlzLUkQqEmGj3kcLXQThBs9UfAsyGCZVZN_GTEID30skHDBqZjmnuo7-QRGzmD-PPC-AV_ORek0D7_a5Be0l-KXSACQuqdLkMgo" />
+                                    <span class="field-validation-valid" data-valmsg-for="CustomValidation" data-valmsg-replace="true"></span>
+                                    <div style="clear: both;"></div>
+                                    <p></p>
+
+                                    <div class="row gap">
+                                        <div class="col-md-12 col-sm-12">
+                                            <div class="col-md-3 col-sm-3 left20"><strong>Username</strong></div>
+                                            <div class="col-md-9 col-sm-9 right5">
+                                                <input autocomplete="off" autocorrect="off" class="form-control flat" id="UserName" name="UserName" placeholder="Email or Mobile No." tabindex="1" type="text" value="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row gap">
+                                        <div class="col-md-12 col-sm-12">
+                                            <div class="col-md-3 col-sm-3 left20"><strong>Password</strong></div>
+                                            <div class="col-md-9 col-sm-9 right5">
+                                                <input autocapitalize="off" autocomplete="off" autocorrect="off" class="form-control flat" id="Password" name="Password" placeholder="Type your password" style="-webkit-text-security: disc !important;" tabindex="2" type="text" value="" />
+                                                <input id="hdnPassword" name="Password" style="display:none;" type="password" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row gap">
+                                        <div class="col-md-12 col-sm-12">
+                                            <div class="col-md-3 col-sm-3"></div>
+                                            <div class="col-md-5 col-sm-5 ">
+                                                <input type="button" id="dummy" class="btn btn-success btn-xs" value="Sign In" tabindex="4" original-title="" (click)="LoginMe()">
+
+
+                                            </div>
+
+
+
+                                        </div>
+                                        <div class="col-md-12 col-sm-12">
+                                            <div class="col-md-3 col-sm-3"></div>
+                                            <div class="col-md-5 col-sm-5 ">
+                                                <div style="padding-top:5px;">
+                                                    <a class="txtwarning font12" href="/Home/ForgotPassword">
+                                                        Forgot password ?
+                                                    </a>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="col-md-4 col-sm-4 ">
+                                                <div style="padding-top:5px;">
+                                                    <a class="txtwarning font12" href="/Home/LoginOTP">
+                                                        Login By OTP
+                                                    </a>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btmgap"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br /><br /><br />
+<div class="col-md-12 col-sm-12 col-xs-12 bgsignup_phrms">
+    <div class="col-md-9 col-sm-10 col-xs-10 bgsignup_phrms">
+        &nbsp;
+    </div>
+    <div class="col-md-3 col-sm-2 col-xs-2 bgsignup_phrms">
+    </div>
+</div>
+<div class="col-md-12 col-sm-12 col-xs-12 bgfooter">
+    <div class="container">
+
+        <div class="col-md-6 col-sm-6 ftrgap">
+            <div class="row">
+                <div class="titlefooter"><strong></strong></div>
+
+                <ul class="ftrlists">
+                    <li>&nbsp;<a class="whitetext" href="http://cdac.in/index.aspx?id=about" target="_blank">About</a> | </li>
+                    <li>&nbsp;<a class="whitetext" href="/Account/FAQS" target="_blank">FAQs</a> | </li>
+                    <!--<li>&nbsp;<a class="whitetext" href="/news.php">/*News</a> | </li> -->
+                    <li>&nbsp;<a class="whitetext" href="/Account/ContactUs" target="_blank">Contact us</a></li>
+                </ul>
+
+
+                <div class="securityfoot">
+                    <ul class="ftrlists">
+                        <!-- <li>&nbsp;<a href="#" target="popup"><img src="files/getseal.png" width="80px"></a> &nbsp; </li>
+                        <li>&nbsp;<img src="files/256sll.png" width="90px">&nbsp; </li>-->
+                        <li>Content Owned, Updated and Maintained by  C-DAC Mohali</li>
+                    </ul>
+                    <ul class="ftrlists"></ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-sm-6 ftrgap">
+            <div class="row">
+                <div class="col-sm-10">
+                    <p style="color: #CCC; text-align: right; margin-top: 15px;">
+                        Centre For Development of Advanced Computing
+                        <br />
+                        A Scientific Society of the Ministry of Electronics &amp; Information Technology, Government of India.<br />
+                        Copyright 2016-17 MyHealthRecord. All Rights Reserved
+                    </p>
+                </div>
+                <div class="col-md-2">
+                    <p style="vertical-align: middle; margin-top: 25px;">
+                        <img src="/images/whitetranscdac.png" class="img-responsive pull-right" width="100">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
