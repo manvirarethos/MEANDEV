@@ -1,6 +1,7 @@
-import {  Component} from '@angular/core';
+import {  Component ,Output,EventEmitter ,AfterViewInit} from '@angular/core';
 import {  AppGlobals} from '../../Services/app.global';
 import {  Router,  ActivatedRoute} from '@angular/router';
+import { correctHeight,  BindAll } from '../shared/app.helper';
 
 @Component({
   selector: 'app-master',
@@ -8,18 +9,24 @@ import {  Router,  ActivatedRoute} from '@angular/router';
 
    providers:[AppGlobals]
 })
-export class MasterComponent {
+export class MasterComponent  implements  AfterViewInit {
   title = 'Node Angular 2 Demo';
-  IsLogin: Boolean = false;
+  @Output() LogOut= new EventEmitter<boolean>();
   constructor(private appG: AppGlobals,private _route: ActivatedRoute,
         private _router: Router) {
 
   }
 
-  logOut() {
-    console.log("AAAAAAAAAAAA");
-    this.appG.setLoginStatus(false);
-  this._router.navigate(['login']);
+  SignOut() {
+   console.log("Sign Out User");
+   this.LogOut.emit(false);
+ 
   }
+  ngAfterViewInit() {
+        setTimeout(() => {
+            correctHeight();
+            BindAll();
+        }, 3000)
 
+    }
 }

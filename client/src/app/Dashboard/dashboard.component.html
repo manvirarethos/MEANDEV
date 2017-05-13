@@ -1,1 +1,70 @@
-DashBoard Html
+<div class="row">
+  <div class="col-lg-4">
+    <div class="ibox float-e-margins">
+      <div class="ibox-title">
+        <span class="label label-success pull-right"></span>
+        <h5>Procedures</h5>
+      </div>
+      <div class="ibox-content">
+        <h1 class="no-margins">
+          <a [routerLink]="['/client/procpro']"></a>
+        </h1>
+        <div class="stat-percent font-bold text-success">98%</div>
+        <small>Completed</small>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="ibox float-e-margins">
+      <div class="ibox-title">
+        <span class="label label-success pull-right">Total</span>
+        <h5>Inventory</h5>
+      </div>
+      <div class="ibox-content">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="no-margins">
+              <a [routerLink]="['/client/clientCatalog']"></a>
+            </h1>
+            <div class="stat-percent font-bold text-success"></div>
+            <small>Owned Items</small>
+          </div>
+          <div class="col-md-6">
+            <h1 class="no-margins">
+              <a [routerLink]="['/client/clientCatalog']"></a>
+            </h1>
+            <div class="stat-percent font-bold text-success"></div>
+            <small>Consigned Items</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="col-lg-4">
+    <div class="ibox float-e-margins">
+      <div class="ibox-title">
+        <span class="label label-success pull-right">Today</span>
+        <h5>Item Alerts</h5>
+      </div>
+      <div class="ibox-content">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="no-margins">
+              <a [routerLink]="['/Notification/ShowLowLevelItem']"></a>
+            </h1>
+            <div class="stat-percent font-bold text-success"></div>
+            <small>Require Reorder</small>
+          </div>
+          <div class="col-md-6">
+            <h1 class="no-margins">
+              <a [routerLink]="['/Notification/ShowAll', 60]"></a>
+            </h1>
+            <div class="stat-percent font-bold text-success"></div>
+            <small>Expire in 60 Days</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

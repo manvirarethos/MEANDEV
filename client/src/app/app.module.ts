@@ -20,9 +20,9 @@ import { MasterComponent } from './master/master.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot([ {path:'',component:MasterComponent},
-    {path:'login',component:LoginComponent}
-
+    RouterModule.forRoot([ 
+      {path:'Dashboard',component:DashboardComponent}
+     
     ]),
     RouterModule
   ],

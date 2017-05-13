@@ -21,11 +21,12 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "css/font-awesome/css/font-awesome.css",
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
          "css/styles.css"
         
       ],
-      "scripts": [],
+      "scripts": ["js/jquery.js","js/plugins/metisMenu/jquery.metisMenu.js","js/plugins/slimscroll/jquery.slimscroll.min.js"],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
