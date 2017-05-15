@@ -26,7 +26,7 @@
          "css/styles.css"
         
       ],
-      "scripts": ["js/jquery.js","js/plugins/metisMenu/jquery.metisMenu.js","js/plugins/slimscroll/jquery.slimscroll.min.js"],
+      "scripts": ["js/jquery.js","js/plugins/metisMenu/jquery.metisMenu.js","js/plugins/slimscroll/jquery.slimscroll.min.js","../node_modules/chart.js/dist/Chart.bundle.min.js"],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

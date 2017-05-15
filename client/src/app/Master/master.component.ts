@@ -20,6 +20,7 @@ export class MasterComponent  implements  AfterViewInit {
   SignOut() {
    console.log("Sign Out User");
    this.LogOut.emit(false);
+   this.appG.DeleteToken();
  
   }
   ngAfterViewInit() {

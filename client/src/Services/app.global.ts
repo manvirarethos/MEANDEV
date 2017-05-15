@@ -5,7 +5,8 @@ import 'rxjs/add/operator/startWith';
 import {BehaviorSubject} from 'rxjs/BehaviorSubject';
 import { StorageService } from './local.storage';
 
-@Injectable() 
+@Injectable()
+
 export class AppGlobals {
    
    constructor(private local:StorageService){}
@@ -26,7 +27,7 @@ export class AppGlobals {
 
   GetToken()
   {
-    this.local.get(this.TokenName);
+  return  this.local.get(this.TokenName);
   }
 
   DeleteToken()

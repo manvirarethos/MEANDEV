@@ -15,6 +15,7 @@ export class LoginComponent {
   }
 
   LoginMe() {
+    this.appG.SetToken('Ram Singh');
   this.CheckLogin.emit(true);
   }
 

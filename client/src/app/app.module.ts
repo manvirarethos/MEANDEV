@@ -5,23 +5,23 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { RouterModule} from '@angular/router';
 import { LoginComponent } from './login/login.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashboardModule } from './dashboard/dashboard.module';
 import { MasterComponent } from './master/master.component';
 
 
 @NgModule({
   declarations: [
         AppComponent,
-        LoginComponent,
-        DashboardComponent,
+        LoginComponent,      
         MasterComponent
   ],
   imports: [
     BrowserModule,
+    DashboardModule,
     FormsModule,
     HttpModule,
     RouterModule.forRoot([ 
-      {path:'Dashboard',component:DashboardComponent}
+    
      
     ]),
     RouterModule

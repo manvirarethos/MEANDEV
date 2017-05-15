@@ -68,3 +68,7 @@
     </div>
   </div>
 </div>
+<div class="row">
+    <my-chart [ChartData]="TotalItemUsed" [ChartTitle]="'Items'" [desc]="'No. of items used year-over-year'" [HideCustom]="false" [ActiveClientList]="clientItemList"  ></my-chart>
+    <my-chart [ChartData]="TotalProceduresByClient" [ChartTitle]="'Procedures'" [desc]="'No. of procedures completed year-over-year'" [HideCustom]="false" [ActiveClientList]="clientItemList" ></my-chart>
+</div>
